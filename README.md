@@ -56,3 +56,16 @@ Se unificó la navbar en todas las páginas y se redujeron enlaces para evitar s
 - `CNAME` corregido con exactamente: `altepet.tech`
 - Sin archivos `.bat`, `.bash`, `.sh` o `.cmd`.
 - Lista para subir a GitHub Pages desde la raíz del repositorio.
+
+
+## Fix Live Server
+
+Se corrigió el problema donde algunas secciones aparecían vacías en VS Code Live Server.
+
+Causa:
+- Las animaciones dejaban elementos con `opacity: 0`.
+- Si JavaScript no activaba `.visible`, las tarjetas no aparecían.
+
+Solución:
+- El contenido ahora es visible por defecto.
+- Las animaciones solo se activan cuando JS añade `html.js-enabled`.

@@ -1,3 +1,4 @@
+document.documentElement.classList.add("js-enabled");
 const html = document.documentElement;
 const header = document.getElementById("siteHeader");
 const menuToggle = document.getElementById("menuToggle");
