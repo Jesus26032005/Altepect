@@ -2083,3 +2083,182 @@ html.js-enabled .stagger.visible > *:nth-child(5) { transition-delay: .36s; }
 html.js-enabled .stagger.visible > *:nth-child(6) { transition-delay: .44s; }
 html.js-enabled .stagger.visible > *:nth-child(7) { transition-delay: .52s; }
 html.js-enabled .stagger.visible > *:nth-child(8) { transition-delay: .60s; }
+
+
+/* ==========================================
+   ALTÉPET FINAL MOBILE PATCH v1.0
+   Añadir AL FINAL de style.css
+   ========================================== */
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+img,
+svg,
+video,
+iframe {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ---------- TABLET ---------- */
+
+@media (max-width: 992px) {
+
+    .navbar {
+        gap: 1rem;
+    }
+
+    .hero,
+    .page-hero {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .hero-copy,
+    .hero-visual,
+    .page-hero-copy,
+    .page-hero-visual {
+        width: 100%;
+    }
+}
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 768px) {
+
+    :root {
+        --container: calc(100% - 2rem);
+    }
+
+    .navbar,
+    .hero,
+    .page-hero,
+    .section,
+    .site-footer {
+        width: var(--container);
+        max-width: var(--container);
+    }
+
+    .hero,
+    .page-hero {
+        min-height: auto;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        overflow: hidden;
+    }
+
+    .hero-copy,
+    .page-hero-copy {
+        width: 100%;
+        max-width: 100%;
+        z-index: 2;
+    }
+
+    .hero-text,
+    .page-hero-text {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .hero-actions .btn {
+        width: 100%;
+    }
+
+    .hero-badges {
+        grid-template-columns: 1fr;
+    }
+
+    .logo-shell {
+        width: 100px;
+        min-height: 40px;
+        padding: .25rem .4rem;
+    }
+
+    .mesh-one,
+    .codex-orb {
+        display: none;
+    }
+
+    h1 {
+        font-size: clamp(2.4rem, 11vw, 3.2rem);
+        line-height: 1.08;
+        letter-spacing: -0.04em;
+        word-break: normal;
+    }
+
+    h2 {
+        font-size: clamp(1.9rem, 9vw, 2.7rem);
+        line-height: 1.12;
+    }
+
+    .hero-text,
+    .section-header p,
+    p {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+
+    .eyebrow {
+        font-size: .75rem;
+        letter-spacing: .18em;
+        line-height: 1.6;
+    }
+
+    .card-grid,
+    .services-grid,
+    .distro-grid,
+    .wm-grid,
+    .command-grid,
+    .problem-grid,
+    .faq-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ---------- TELÉFONOS PEQUEÑOS ---------- */
+
+@media (max-width: 480px) {
+
+    :root {
+        --container: calc(100% - 1.5rem);
+    }
+
+    h1 {
+        font-size: clamp(2rem, 10vw, 2.8rem);
+    }
+
+    h2 {
+        font-size: clamp(1.7rem, 8vw, 2.2rem);
+    }
+
+    .hero,
+    .page-hero {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .section {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .logo-shell {
+        width: 90px;
+    }
+}
