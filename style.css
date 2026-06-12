@@ -946,3 +946,271 @@ html[data-theme="dark"] .logo-frame,
 html[data-theme="dark"] .logo-showcase {
     filter: none;
 }
+
+
+/* =========================================================
+   ALTÉPET CSS FINAL PATCH
+   Correcciones: móvil, hero, navbar, overflow y botón subir
+   ========================================================= */
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+img,
+svg,
+video,
+iframe {
+    max-width: 100%;
+    height: auto;
+}
+
+.back-to-top {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    z-index: 1600;
+
+    width: 48px;
+    height: 48px;
+
+    display: grid;
+    place-items: center;
+
+    border: 1px solid var(--color-border);
+    border-radius: 50%;
+    background: var(--surface);
+    color: var(--heading);
+
+    font-size: 1.25rem;
+    font-weight: 900;
+    line-height: 1;
+
+    cursor: pointer;
+    box-shadow: var(--shadow-md);
+
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(10px);
+    transition: opacity .25s ease, transform .25s ease, background .25s ease, color .25s ease;
+}
+
+.back-to-top.show {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+@media (max-width: 992px) {
+    .navbar {
+        gap: 1rem;
+    }
+
+    .hero,
+    .page-hero {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .hero-copy,
+    .hero-visual,
+    .page-hero-copy,
+    .page-hero-visual {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    :root {
+        --container: calc(100% - 2rem);
+    }
+
+    .navbar,
+    .hero,
+    .page-hero,
+    .section,
+    .site-footer {
+        width: var(--container);
+        max-width: var(--container);
+    }
+
+    .site-header {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .hero,
+    .page-hero {
+        display: block;
+        min-height: auto;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        overflow: hidden;
+    }
+
+    .hero-copy,
+    .page-hero-copy {
+        position: relative;
+        z-index: 3;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .hero-text,
+    .page-hero-text,
+    .section-header p,
+    p {
+        max-width: 100%;
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .hero-actions .btn,
+    .hero-badges span,
+    .btn {
+        width: 100%;
+    }
+
+    .hero-badges {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .mesh-one,
+    .codex-orb {
+        display: none;
+    }
+
+    .eyebrow {
+        font-size: .75rem;
+        letter-spacing: .16em;
+        line-height: 1.6;
+        max-width: 100%;
+        word-break: normal;
+    }
+
+    h1 {
+        max-width: 100%;
+        font-size: clamp(2.35rem, 11vw, 3.15rem);
+        line-height: 1.08;
+        letter-spacing: -0.04em;
+        margin-bottom: 1.1rem;
+        word-break: normal;
+        overflow-wrap: normal;
+    }
+
+    h2 {
+        font-size: clamp(1.9rem, 9vw, 2.7rem);
+        line-height: 1.12;
+    }
+
+    .logo-shell {
+        width: 100px;
+        min-height: 40px;
+        padding: .25rem .4rem;
+    }
+
+    .card-grid,
+    .card-grid.four,
+    .services-grid,
+    .timeline,
+    .distro-grid,
+    .wm-grid,
+    .command-grid,
+    .command-grid.three,
+    .package-grid,
+    .cheatsheet-grid,
+    .problem-grid,
+    .diagnostic-grid,
+    .safety-grid,
+    .stats,
+    .compare-grid,
+    .pilot,
+    .contact,
+    .security-layout,
+    .philosophy,
+    .comparator,
+    .cachy-section,
+    .shortcut-panel {
+        grid-template-columns: 1fr;
+    }
+
+    .security-image img,
+    .page-hero-visual img,
+    .visual-card > img {
+        min-height: auto;
+    }
+
+    .terminal-card {
+        position: static;
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .nav-menu {
+        max-height: calc(100vh - 90px);
+        overflow-y: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    :root {
+        --container: calc(100% - 1.5rem);
+    }
+
+    .hero,
+    .page-hero {
+        padding-top: 2.4rem;
+        padding-bottom: 2.8rem;
+    }
+
+    .section {
+        padding-top: 3.2rem;
+        padding-bottom: 3.2rem;
+    }
+
+    h1 {
+        font-size: clamp(2.05rem, 10.5vw, 2.75rem);
+        line-height: 1.1;
+    }
+
+    h2 {
+        font-size: clamp(1.7rem, 8.5vw, 2.25rem);
+    }
+
+    .logo-shell {
+        width: 90px;
+        min-height: 38px;
+    }
+
+    .navbar {
+        height: 68px;
+    }
+
+    .nav-menu {
+        top: 68px;
+    }
+
+    .back-to-top {
+        width: 44px;
+        height: 44px;
+        right: .8rem;
+        bottom: .8rem;
+    }
+}

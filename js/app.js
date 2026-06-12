@@ -340,7 +340,7 @@ document.querySelectorAll("img:not([loading])").forEach((img) => {
 });
 
 const backToTop = document.createElement("button");
-backToTop.className = "theme-toggle back-to-top";
+backToTop.className = "back-to-top";
 backToTop.type = "button";
 backToTop.setAttribute("aria-label", "Volver arriba");
 backToTop.textContent = "↑";
@@ -360,7 +360,5 @@ backToTop.addEventListener("click", () => {
 
 window.addEventListener("scroll", () => {
     const show = window.scrollY > 700;
-    backToTop.style.opacity = show ? "1" : "0";
-    backToTop.style.pointerEvents = show ? "auto" : "none";
-    backToTop.style.transform = show ? "translateY(0)" : "translateY(10px)";
+    backToTop.classList.toggle("show", show);
 });
