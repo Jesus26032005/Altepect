@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atajos y comandos básicos Linux | Altépet</title>
+
+    <meta name="description" content="Aprende atajos de teclado y comandos básicos de Linux para GNOME, KDE, Hyprland, i3, terminal, sistema y paquetes. Guía práctica de Altépet.">
+    <meta name="keywords" content="atajos Linux, comandos básicos Linux, terminal Linux, GNOME atajos, KDE atajos, Hyprland atajos, i3 atajos, apt, dnf, pacman, Linux México">
+    <meta name="author" content="Altépet">
+    <meta name="theme-color" content="#0F3A5F">
+
+    <meta property="og:title" content="Atajos y comandos básicos Linux | Altépet">
+    <meta property="og:description" content="Una guía clara para usar Linux con más confianza: teclado, terminal y comandos esenciales.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/logo-altepet.png">
+
+    
+    <link rel="canonical" href="https://altepet.tech/atajos.html">
+    <link rel="manifest" href="manifest.json">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="atajos Linux, comandos básicos Linux, terminal Linux, apt, dnf, pacman, Hyprland atajos, i3 atajos">
+
+    <meta property="og:title" content="Atajos y comandos básicos Linux | Altépet">
+    <meta property="og:description" content="Aprende atajos de teclado y comandos básicos de Linux para terminal, sistema, paquetes, GNOME, KDE, Hyprland e i3.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://altepet.tech/atajos.html">
+    <meta property="og:image" content="https://altepet.tech/assets/logo-altepet.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Atajos y comandos básicos Linux | Altépet">
+    <meta name="twitter:description" content="Aprende atajos de teclado y comandos básicos de Linux para terminal, sistema, paquetes, GNOME, KDE, Hyprland e i3.">
+    <meta name="twitter:image" content="https://altepet.tech/assets/logo-altepet.png">
+
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "Altépet", "url": "https://altepet.tech", "email": "altepet.tech@gmail.com", "description": "Tecnología rápida, estable y libre con Linux, privacidad y soporte humano.", "logo": "https://altepet.tech/assets/logo-altepet.png"}</script>
+
+    <link rel="icon" href="assets/logo-altepet.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <header class="site-header" id="siteHeader">
+        <nav class="navbar" aria-label="Navegación principal">
+            <a href="index.html" class="brand" aria-label="Altépet inicio">
+                <span class="logo-shell">
+                    <img src="assets/logo-altepet.png" alt="Logo Altépet">
+                </span>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html">Inicio</a>
+                <a href="distribuciones.html">Distribuciones</a>
+                <a href="gestores.html">Gestores</a>
+                <a href="problemas-comunes.html">Problemas</a>
+                <a href="#teclado">Teclado</a>
+                <a href="#terminal">Terminal</a>
+                <a href="#paquetes">Paquetes</a>
+                <a href="#cheatsheet">Cheatsheet</a>
+
+                <button class="theme-toggle" id="themeToggle" type="button" aria-label="Cambiar tema">
+                    <span id="themeIcon">🌙</span>
+                </button>
+
+                <a href="index.html#contacto" class="nav-cta">Asesoría Altépet</a>
+            </div>
+        </nav>
+    </header>
+
+    <main id="contenido">
+        <section class="page-hero shortcuts-hero">
+            <div class="mesh mesh-one" aria-hidden="true"></div>
+            <div class="codex-orb" aria-hidden="true"></div>
+
+            <div class="page-hero-copy reveal-left">
+                <p class="eyebrow">Guía práctica</p>
+                <h1>Atajos y comandos básicos para usar Linux con confianza.</h1>
+                <p class="hero-text">
+                    No necesitas memorizar todo. Empieza con lo esencial: moverte por ventanas, abrir terminal,
+                    instalar programas, revisar tu sistema y resolver tareas comunes.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#terminal" class="btn btn-primary">Ver comandos</a>
+                    <a href="#cheatsheet" class="btn btn-secondary">Cheatsheet rápido</a>
+                </div>
+
+                <div class="hero-badges">
+                    <span>Copiar comandos</span>
+                    <span>Atajos por entorno</span>
+                    <span>Sin tecnicismos</span>
+                </div>
+            </div>
+
+            <div class="page-hero-visual reveal-right">
+                <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=1100&q=80" alt="Terminal y código en pantalla" loading="eager">
+            </div>
+        </section>
+
+        <section id="teclado" class="section">
+            <div class="section-header reveal-up">
+                <p class="eyebrow">Atajos de teclado</p>
+                <h2>Muévete más rápido sin tocar tanto el mouse.</h2>
+                <p>
+                    Los atajos cambian según el entorno, pero estos son buenos puntos de partida para usuarios nuevos.
+                </p>
+            </div>
+
+            <div class="shortcut-tabs reveal-up">
+                <button class="shortcut-tab active" data-shortcut="gnome" type="button">GNOME</button>
+                <button class="shortcut-tab" data-shortcut="kde" type="button">KDE Plasma</button>
+                <button class="shortcut-tab" data-shortcut="hyprland" type="button">Hyprland</button>
+                <button class="shortcut-tab" data-shortcut="i3" type="button">i3</button>
+                <button class="shortcut-tab" data-shortcut="general" type="button">Generales</button>
+            </div>
+
+            <div class="shortcut-panel reveal-up" id="shortcutPanel">
+                <article class="shortcut-card">
+                    <kbd>Super</kbd>
+                    <div><h3>Vista de actividades</h3><p>Abre la vista principal para buscar apps y ventanas.</p></div>
+                </article>
+                <article class="shortcut-card">
+                    <kbd>Alt</kbd><span>+</span><kbd>Tab</kbd>
+                    <div><h3>Cambiar ventana</h3><p>Salta entre aplicaciones abiertas.</p></div>
+                </article>
+                <article class="shortcut-card">
+                    <kbd>Super</kbd><span>+</span><kbd>L</kbd>
+                    <div><h3>Bloquear pantalla</h3><p>Protege tu sesión cuando te alejas.</p></div>
+                </article>
+            </div>
+        </section>
+
+        <section id="terminal" class="section">
+            <div class="section-header reveal-up">
+                <p class="eyebrow">Terminal básica</p>
+                <h2>Comandos esenciales que sí vale la pena conocer.</h2>
+                <p>
+                    La terminal no es obligatoria para todo, pero entender estos comandos te da más control y seguridad.
+                </p>
+            </div>
+
+            <div class="command-grid stagger">
+                <article class="command-card">
+                    <div class="command-line"><code>pwd</code><button class="copy-btn" data-copy="pwd">Copiar</button></div>
+                    <h3>Ver dónde estás</h3>
+                    <p>Muestra la carpeta actual.</p>
+                </article>
+
+                <article class="command-card">
+                    <div class="command-line"><code>ls</code><button class="copy-btn" data-copy="ls">Copiar</button></div>
+                    <h3>Listar archivos</h3>
+                    <p>Muestra el contenido de una carpeta.</p>
+                </article>
+
+                <article class="command-card">
+                    <div class="command-line"><code>cd Documentos</code><button class="copy-btn" data-copy="cd Documentos">Copiar</button></div>
+                    <h3>Entrar a una carpeta</h3>
+                    <p>Cambia de ubicación dentro del sistema.</p>
+                </article>
+
+                <article class="command-card">
+                    <div class="command-line"><code>mkdir proyecto</code><button class="copy-btn" data-copy="mkdir proyecto">Copiar</button></div>
+                    <h3>Crear carpeta</h3>
+                    <p>Crea una nueva carpeta llamada proyecto.</p>
+                </article>
+
+                <article class="command-card">
+                    <div class="command-line"><code>cp archivo.txt copia.txt</code><button class="copy-btn" data-copy="cp archivo.txt copia.txt">Copiar</button></div>
+                    <h3>Copiar archivo</h3>
+                    <p>Crea una copia de un archivo.</p>
+                </article>
+
+                <article class="command-card">
+                    <div class="command-line"><code>mv viejo.txt nuevo.txt</code><button class="copy-btn" data-copy="mv viejo.txt nuevo.txt">Copiar</button></div>
+                    <h3>Mover o renombrar</h3>
+                    <p>Sirve para mover archivos o cambiar nombres.</p>
+                </article>
+
+                <article class="command-card warning">
+                    <div class="command-line"><code>rm archivo.txt</code><button class="copy-btn" data-copy="rm archivo.txt">Copiar</button></div>
+                    <h3>Eliminar archivo</h3>
+                    <p>Úsalo con cuidado. No siempre hay papelera.</p>
+                </article>
+
+                <article class="command-card">
+                    <div class="command-line"><code>sudo comando</code><button class="copy-btn" data-copy="sudo comando">Copiar</button></div>
+                    <h3>Ejecutar como administrador</h3>
+                    <p>Solo úsalo si sabes qué hace el comando.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="sistema" class="section system-section">
+            <div class="section-header reveal-up">
+                <p class="eyebrow">Sistema</p>
+                <h2>Revisa salud, espacio y recursos.</h2>
+            </div>
+
+            <div class="command-grid three stagger">
+                <article class="command-card">
+                    <div class="command-line"><code>free -h</code><button class="copy-btn" data-copy="free -h">Copiar</button></div>
+                    <h3>Memoria RAM</h3>
+                    <p>Muestra cuánta memoria está disponible y en uso.</p>
+                </article>
+
+                <article class="command-card">
+                    <div class="command-line"><code>df -h</code><button class="copy-btn" data-copy="df -h">Copiar</button></div>
+                    <h3>Espacio en disco</h3>
+                    <p>Indica cuánto espacio queda en tus particiones.</p>
+                </article>
+
+                <article class="command-card">
+                    <div class="command-line"><code>uname -a</code><button class="copy-btn" data-copy="uname -a">Copiar</button></div>
+                    <h3>Información del sistema</h3>
+                    <p>Muestra kernel y datos técnicos básicos.</p>
+                </article>
+
+                <article class="command-card">
+                    <div class="command-line"><code>top</code><button class="copy-btn" data-copy="top">Copiar</button></div>
+                    <h3>Procesos activos</h3>
+                    <p>Permite ver qué consume recursos.</p>
+                </article>
+
+                <article class="command-card">
+                    <div class="command-line"><code>htop</code><button class="copy-btn" data-copy="htop">Copiar</button></div>
+                    <h3>Monitor más visual</h3>
+                    <p>Puede requerir instalación previa.</p>
+                </article>
+
+                <article class="command-card">
+                    <div class="command-line"><code>ip a</code><button class="copy-btn" data-copy="ip a">Copiar</button></div>
+                    <h3>Red e IP</h3>
+                    <p>Muestra interfaces de red y direcciones IP.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="paquetes" class="section">
+            <div class="section-header reveal-up">
+                <p class="eyebrow">Gestión de paquetes</p>
+                <h2>Actualizar e instalar software según tu distribución.</h2>
+                <p>
+                    Cada familia de Linux usa comandos distintos. Altépet siempre te deja una guía específica según la distribución que instalemos.
+                </p>
+            </div>
+
+            <div class="package-grid stagger">
+                <article class="package-card">
+                    <h3>Ubuntu / Linux Mint / Zorin</h3>
+                    <div class="command-line"><code>sudo apt update</code><button class="copy-btn" data-copy="sudo apt update">Copiar</button></div>
+                    <div class="command-line"><code>sudo apt upgrade</code><button class="copy-btn" data-copy="sudo apt upgrade">Copiar</button></div>
+                    <div class="command-line"><code>sudo apt install nombre</code><button class="copy-btn" data-copy="sudo apt install nombre">Copiar</button></div>
+                </article>
+
+                <article class="package-card">
+                    <h3>Fedora / Nobara / Bazzite</h3>
+                    <div class="command-line"><code>sudo dnf update</code><button class="copy-btn" data-copy="sudo dnf update">Copiar</button></div>
+                    <div class="command-line"><code>sudo dnf install nombre</code><button class="copy-btn" data-copy="sudo dnf install nombre">Copiar</button></div>
+                    <div class="command-line"><code>dnf search nombre</code><button class="copy-btn" data-copy="dnf search nombre">Copiar</button></div>
+                </article>
+
+                <article class="package-card">
+                    <h3>Arch / Garuda / CachyOS</h3>
+                    <div class="command-line"><code>sudo pacman -Syu</code><button class="copy-btn" data-copy="sudo pacman -Syu">Copiar</button></div>
+                    <div class="command-line"><code>sudo pacman -S nombre</code><button class="copy-btn" data-copy="sudo pacman -S nombre">Copiar</button></div>
+                    <div class="command-line"><code>pacman -Ss nombre</code><button class="copy-btn" data-copy="pacman -Ss nombre">Copiar</button></div>
+                </article>
+
+                <article class="package-card">
+                    <h3>openSUSE</h3>
+                    <div class="command-line"><code>sudo zypper refresh</code><button class="copy-btn" data-copy="sudo zypper refresh">Copiar</button></div>
+                    <div class="command-line"><code>sudo zypper update</code><button class="copy-btn" data-copy="sudo zypper update">Copiar</button></div>
+                    <div class="command-line"><code>sudo zypper install nombre</code><button class="copy-btn" data-copy="sudo zypper install nombre">Copiar</button></div>
+                </article>
+            </div>
+        </section>
+
+        <section id="cheatsheet" class="section">
+            <div class="section-header reveal-up">
+                <p class="eyebrow">Cheatsheet visual</p>
+                <h2>Lo mínimo para no perderte.</h2>
+            </div>
+
+            <div class="cheatsheet-grid stagger">
+                <article class="cheat-card">
+                    <h3>Me muevo</h3>
+                    <p><code>pwd</code> dónde estoy</p>
+                    <p><code>ls</code> qué hay aquí</p>
+                    <p><code>cd</code> cambiar carpeta</p>
+                </article>
+
+                <article class="cheat-card">
+                    <h3>Creo y copio</h3>
+                    <p><code>mkdir</code> crear carpeta</p>
+                    <p><code>cp</code> copiar</p>
+                    <p><code>mv</code> mover/renombrar</p>
+                </article>
+
+                <article class="cheat-card">
+                    <h3>Reviso sistema</h3>
+                    <p><code>free -h</code> memoria</p>
+                    <p><code>df -h</code> disco</p>
+                    <p><code>top</code> procesos</p>
+                </article>
+
+                <article class="cheat-card">
+                    <h3>Instalo</h3>
+                    <p><code>apt</code> Ubuntu/Mint</p>
+                    <p><code>dnf</code> Fedora</p>
+                    <p><code>pacman</code> Arch</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section distro-faq">
+            <div class="section-header reveal-up">
+                <p class="eyebrow">Preguntas frecuentes</p>
+                <h2>Antes de usar la terminal.</h2>
+            </div>
+
+            <div class="faq-list reveal-up">
+                <details>
+                    <summary>¿Tengo que usar terminal para usar Linux?</summary>
+                    <p>No. Muchas tareas se hacen con interfaz gráfica. La terminal solo te da más control cuando la necesitas.</p>
+                </details>
+                <details>
+                    <summary>¿Es peligroso copiar comandos de internet?</summary>
+                    <p>Sí puede serlo. Nunca ejecutes comandos que no entiendas, especialmente si incluyen <code>sudo</code> o <code>rm -rf</code>.</p>
+                </details>
+                <details>
+                    <summary>¿Qué significa sudo?</summary>
+                    <p>Ejecuta comandos con permisos de administrador. Úsalo con cuidado porque puede modificar partes importantes del sistema.</p>
+                </details>
+                <details>
+                    <summary>¿Altépet me deja una guía personalizada?</summary>
+                    <p>Sí. La idea es que no dependas de memorizar todo, sino de tener una ruta clara según tu distribución.</p>
+                </details>
+            </div>
+        </section>
+
+        <section class="section pilot reveal-up">
+            <div>
+                <p class="eyebrow">Asesoría Altépet</p>
+                <h2>No aprendas Linux a golpes.</h2>
+                <p>
+                    Te dejamos tu sistema listo, con atajos básicos, guía de comandos y soporte para las tareas que realmente usas.
+                </p>
+            </div>
+
+            <div class="pilot-card">
+                <h3>Incluimos guía inicial</h3>
+                <ul>
+                    <li>Atajos de tu entorno.</li>
+                    <li>Comandos seguros.</li>
+                    <li>Actualización del sistema.</li>
+                    <li>Buenas prácticas de seguridad.</li>
+                </ul>
+                <a href="index.html#contacto" class="btn btn-primary">Solicitar ayuda</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div>
+            <a href="index.html" class="footer-logo">
+                <span class="logo-shell">
+                    <img src="assets/logo-altepet.png" alt="Logo Altépet">
+                </span>
+            </a>
+            <p>Altépet - Tecnología transparente y libre.</p>
+        </div>
+
+        <nav class="footer-links" aria-label="Enlaces de pie de página">
+            <a href="index.html">Inicio</a>
+            <a href="distribuciones.html">Distribuciones</a>
+            <a href="gestores.html">Gestores</a>
+            <a href="#terminal">Terminal</a>
+            <a href="#paquetes">Paquetes</a>
+        </nav>
+
+        <div class="footer-links">
+            <a href="mailto:altepet.tech@gmail.com">altepet.tech@gmail.com</a>
+            <a href="index.html#contacto">Contacto</a>
+            <a href="#cheatsheet">Cheatsheet</a>
+        </div>
+    </footer>
+
+    <div class="toast" id="copyToast" role="status" aria-live="polite">Comando copiado</div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

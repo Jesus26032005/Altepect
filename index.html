@@ -3,27 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Altépet | Tecnología rápida, estable y libre</title>
+    <title>Altépet | Soporte Linux, privacidad y software libre en México</title>
 
-    <meta name="description" content="Altépet ayuda a recuperar el control de tu computadora mediante Linux, privacidad, soporte humano y optimización de equipos lentos.">
-    <meta name="keywords" content="Altépet, Linux, soporte Linux, software libre, migración Linux, optimización PC, privacidad digital, computadoras lentas">
+    <meta name="description" content="Altépet ayuda a recuperar el control de tu computadora con Linux, privacidad, seguridad, optimización de equipos lentos y soporte humano en México.">
+    <meta name="keywords" content="Linux México, soporte Linux México, migración Linux, optimizar laptop vieja, software libre, privacidad digital, seguridad Linux, Altépet">
     <meta name="author" content="Altépet">
+    <meta name="theme-color" content="#0F3A5F">
 
     <meta property="og:title" content="Altépet | Tecnología rápida, estable y libre">
-    <meta property="og:description" content="Recupera el control de tu tecnología con Linux simple, estable y con soporte humano.">
+    <meta property="og:description" content="Recupera el control de tu computadora con Linux, privacidad y soporte humano.">
     <meta property="og:type" content="website">
     <meta property="og:image" content="assets/logo-altepet.png">
+    
+    <link rel="canonical" href="https://altepet.tech/">
+    <link rel="manifest" href="manifest.json">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="Linux México, soporte Linux México, migración Linux, optimizar laptop vieja, software libre, privacidad digital, seguridad Linux">
+
+    <meta property="og:title" content="Altépet | Soporte Linux, privacidad y software libre en México">
+    <meta property="og:description" content="Altépet ayuda a recuperar el control de tu computadora con Linux, privacidad, seguridad, optimización de equipos lentos y soporte humano en México.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://altepet.tech/">
+    <meta property="og:image" content="https://altepet.tech/assets/logo-altepet.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Altépet | Soporte Linux, privacidad y software libre en México">
+    <meta name="twitter:description" content="Altépet ayuda a recuperar el control de tu computadora con Linux, privacidad, seguridad, optimización de equipos lentos y soporte humano en México.">
+    <meta name="twitter:image" content="https://altepet.tech/assets/logo-altepet.png">
+
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "Altépet", "url": "https://altepet.tech", "email": "altepet.tech@gmail.com", "description": "Tecnología rápida, estable y libre con Linux, privacidad y soporte humano.", "logo": "https://altepet.tech/assets/logo-altepet.png"}</script>
 
     <link rel="icon" href="assets/logo-altepet.png">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
     <header class="site-header" id="siteHeader">
-        <nav class="navbar">
-            <a href="#" class="brand" aria-label="Inicio Altépet">
-                <span class="logo-frame">
+        <nav class="navbar" aria-label="Navegación principal">
+            <a href="index.html" class="brand" aria-label="Altépet inicio">
+                <span class="logo-shell">
                     <img src="assets/logo-altepet.png" alt="Logo Altépet">
                 </span>
             </a>
@@ -35,13 +55,19 @@
             </button>
 
             <div class="nav-menu" id="navMenu">
-                <a href="#significado">Qué significa</a>
                 <a href="#beneficios">Beneficios</a>
+                <a href="#seguridad">Seguridad</a>
                 <a href="#servicios">Servicios</a>
-                <a href="#funciona">Cómo funciona</a>
+                <a href="distribuciones.html">Distribuciones</a>
+            <a href="gestores.html">Gestores</a>
+                <a href="atajos.html">Atajos</a>
+                <a href="problemas-comunes.html">Problemas</a>
+                <a href="gestores.html">Gestores</a>
+                <a href="#funciona">Proceso</a>
+                <a href="#piloto">Piloto</a>
                 <a href="#faq">FAQ</a>
 
-                <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+                <button class="theme-toggle" id="themeToggle" type="button" aria-label="Cambiar tema">
                     <span id="themeIcon">🌙</span>
                 </button>
 
@@ -50,178 +76,176 @@
         </nav>
     </header>
 
-    <main>
-
+    <main id="contenido">
         <section class="hero">
-            <div class="hero-pattern" aria-hidden="true"></div>
+            <div class="mesh mesh-one" aria-hidden="true"></div>
+            <div class="codex-orb" aria-hidden="true"></div>
 
-            <div class="hero-content fade-up">
-                <p class="eyebrow">Linux · privacidad · soporte humano</p>
+            <div class="hero-copy reveal-left">
+                <p class="eyebrow">Linux · privacidad · seguridad · soporte humano</p>
                 <h1>Recupera el control de tu tecnología.</h1>
-                <p class="hero-copy">
+                <p class="hero-text">
                     En Altépet ayudamos a personas, estudiantes y pequeños negocios a revivir sus computadoras con Linux:
-                    rápido, estable, libre y acompañado por soporte humano.
+                    sistemas rápidos, estables, seguros y listos para usar sin abandonarte después de instalar.
                 </p>
 
                 <div class="hero-actions">
-                    <a href="#servicios" class="btn btn-primary">Ver servicios</a>
-                    <a href="#piloto" class="btn btn-secondary">Unirme al piloto</a>
+                    <a class="btn btn-primary" href="#servicios">Ver servicios</a>
+                    <a class="btn btn-secondary" href="#piloto">Unirme al piloto</a>
                 </div>
 
-                <div class="trust-row">
+                <div class="hero-badges" aria-label="Beneficios rápidos">
                     <span>Sin licencias forzadas</span>
                     <span>Menos telemetría</span>
-                    <span>Más vida para tu equipo</span>
+                    <span>Más seguridad</span>
                 </div>
             </div>
 
-            <div class="hero-visual fade-up">
-                <img
-                    src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1100&q=80"
-                    alt="Persona usando una laptop con tecnología moderna"
-                    loading="eager"
-                >
-
-                <div class="hero-terminal">
-                    <div class="terminal-dots">
-                        <span></span><span></span><span></span>
-                    </div>
-                    <pre><code>$ altepet recuperar-pc
-✓ Diagnóstico completo
+            <div class="hero-visual reveal-right">
+                <div class="visual-card">
+                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1100&q=80" alt="Persona usando una laptop para trabajo digital" loading="eager">
+                    <div class="terminal-card" aria-label="Resumen técnico Altépet">
+                        <div class="terminal-top">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <pre><code>$ altepet diagnostico
+✓ Hardware revisado
 ✓ Linux recomendado
-✓ Privacidad configurada
+✓ Seguridad configurada
 ✓ Soporte humano activo</code></pre>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="section logo-section fade-up">
+        <section class="logo-stage section reveal-up">
             <div class="logo-showcase">
                 <img src="assets/logo-altepet.png" alt="Logo completo de Altépet">
             </div>
         </section>
 
-        <section id="significado" class="section meaning">
-            <div class="meaning-copy fade-up">
-                <p class="eyebrow">Identidad</p>
-                <h2>Altépet: comunidad, territorio y tecnología libre.</h2>
-                <p>
-                    El nombre Altépet se inspira en la idea de territorio, comunidad y raíz. Lo usamos porque creemos que la tecnología debe construirse alrededor de las personas, no alrededor de plataformas que las encierran.
-                </p>
-                <p>
-                    Nuestro símbolo une montaña, camino y luz: estabilidad, guía y una forma más transparente de usar la tecnología.
-                </p>
-            </div>
-
-            <div class="meaning-card fade-up">
-                <h3>Tecnología con raíz humana</h3>
-                <p>
-                    No queremos que Linux sea algo reservado para expertos. Queremos convertirlo en una experiencia clara, útil y acompañada para usuarios reales.
-                </p>
-            </div>
-        </section>
-
-        <section class="impact section fade-up" aria-label="Indicadores de impacto">
-            <div class="impact-card">
-                <strong>+50</strong>
+        <section class="stats section" aria-label="Indicadores de Altépet">
+            <article class="stat-card reveal-up">
+                <strong class="counter" data-target="50">0</strong>
                 <span>equipos por recuperar en fase piloto</span>
-            </div>
-
-            <div class="impact-card">
-                <strong>0</strong>
+            </article>
+            <article class="stat-card reveal-up">
+                <strong class="counter" data-target="0">0</strong>
                 <span>licencias obligatorias para empezar</span>
-            </div>
-
-            <div class="impact-card">
-                <strong>100%</strong>
-                <span>acompañamiento humano durante la migración</span>
-            </div>
+            </article>
+            <article class="stat-card reveal-up">
+                <strong class="counter" data-target="100">0</strong>
+                <span>% acompañamiento humano</span>
+            </article>
         </section>
 
         <section id="beneficios" class="section">
-            <div class="section-header fade-up">
+            <div class="section-header reveal-up">
                 <p class="eyebrow">Beneficios</p>
                 <h2>Tu computadora puede sentirse nueva otra vez.</h2>
                 <p>
-                    Muchas veces el problema no es tu equipo. El problema es un sistema pesado, invasivo y lleno de procesos que no necesitas.
+                    Muchas veces el problema no es tu hardware. El problema es un sistema pesado,
+                    invasivo y lleno de procesos que consumen recursos sin explicarte por qué.
                 </p>
             </div>
 
-            <div class="benefits-grid">
-                <article class="feature-card fade-up">
-                    <span class="feature-icon">⚡</span>
+            <div class="card-grid four stagger">
+                <article class="info-card">
+                    <span class="icon">⚡</span>
                     <h3>Más velocidad</h3>
-                    <p>Instalamos sistemas ligeros que aprovechan mejor tu memoria, procesador y almacenamiento.</p>
+                    <p>Instalamos sistemas ligeros que aprovechan mejor memoria, procesador y almacenamiento.</p>
                 </article>
 
-                <article class="feature-card fade-up">
-                    <span class="feature-icon">🛡️</span>
+                <article class="info-card">
+                    <span class="icon">🛡️</span>
                     <h3>Más privacidad</h3>
-                    <p>Reducimos telemetría y configuramos el equipo pensando en tus datos, no en anuncios.</p>
+                    <p>Reducimos telemetría innecesaria y configuramos tu equipo pensando en tus datos.</p>
                 </article>
 
-                <article class="feature-card fade-up">
-                    <span class="feature-icon">🌱</span>
+                <article class="info-card">
+                    <span class="icon">🌱</span>
                     <h3>Menos obsolescencia</h3>
-                    <p>Alargamos la vida útil de computadoras que aún pueden trabajar perfectamente.</p>
+                    <p>Alargamos la vida útil de equipos que todavía pueden trabajar perfectamente.</p>
                 </article>
 
-                <article class="feature-card fade-up">
-                    <span class="feature-icon">🧭</span>
+                <article class="info-card">
+                    <span class="icon">🧭</span>
                     <h3>Menos confusión</h3>
                     <p>Te explicamos lo necesario en lenguaje claro. Linux no debe sentirse intimidante.</p>
                 </article>
             </div>
         </section>
 
-        <section class="section image-band">
-            <div class="image-card fade-up">
-                <img
-                    src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1100&q=80"
-                    alt="Circuitos electrónicos que representan tecnología moderna"
-                    loading="lazy"
-                >
+        <section id="seguridad" class="section security">
+            <div class="section-header reveal-up">
+                <p class="eyebrow">Seguridad y privacidad</p>
+                <h2>Una computadora más rápida también debe ser más confiable.</h2>
+                <p>
+                    Altépet no solo instala Linux. Configuramos una base más transparente para que tu equipo sea más seguro,
+                    más predecible y menos dependiente de plataformas que viven de recolectar datos.
+                </p>
             </div>
 
-            <div class="image-copy fade-up">
-                <p class="eyebrow">Software libre</p>
-                <h2>Privacidad y rendimiento sin complicarte la vida.</h2>
-                <p>
-                    Usamos Linux como base porque es estable, flexible y transparente. Pero el valor de Altépet no es solo instalar un sistema: es entregarte una computadora lista, entendible y acompañada.
-                </p>
+            <div class="security-layout">
+                <div class="security-image reveal-left">
+                    <img src="https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?auto=format&fit=crop&w=1100&q=80" alt="Seguridad digital y protección de datos" loading="lazy">
+                </div>
+
+                <div class="security-cards stagger">
+                    <article class="info-card">
+                        <span class="icon">🔒</span>
+                        <h3>Modelo de permisos</h3>
+                        <p>Linux separa mejor permisos de usuario, sistema y aplicaciones para reducir riesgos comunes.</p>
+                    </article>
+
+                    <article class="info-card">
+                        <span class="icon">👁️</span>
+                        <h3>Menos rastreo</h3>
+                        <p>Configuramos opciones para disminuir telemetría y servicios innecesarios desde el inicio.</p>
+                    </article>
+
+                    <article class="info-card">
+                        <span class="icon">⚙️</span>
+                        <h3>Software transparente</h3>
+                        <p>Priorizamos herramientas open-source revisadas por comunidades y mantenidas públicamente.</p>
+                    </article>
+                </div>
             </div>
         </section>
 
         <section id="filosofia" class="section philosophy">
-            <div class="philosophy-copy fade-up">
+            <div class="philosophy-copy reveal-left">
                 <p class="eyebrow">Nuestra filosofía</p>
                 <h2>La tecnología debe servirte, no encerrarte.</h2>
                 <p>
-                    Altépet nace como respuesta a una desconexión cada vez más común: usuarios que ya no saben qué hace su computadora, por qué se vuelve lenta o qué datos está enviando.
+                    Altépet nace de una frustración cotidiana: equipos que se vuelven lentos, sistemas que deciden por ti y
+                    plataformas que recolectan datos mientras te empujan a comprar hardware nuevo.
                 </p>
                 <p>
-                    Nos inspiramos en el modelo de soporte open-source que hizo fuerte a Red Hat en empresas, pero lo adaptamos para hogares, estudiantes y pequeños negocios.
+                    Tomamos Linux y el software libre como una base sólida, pero nuestro verdadero servicio es humano:
+                    diagnóstico, instalación, acompañamiento y claridad para que el cambio sea tranquilo.
                 </p>
-                <a href="#contacto" class="inline-link">Quiero recuperar el control →</a>
+                <a href="#contacto" class="text-link">Quiero recuperar el control →</a>
             </div>
 
-            <div class="codex-panel fade-up">
-                <div class="codex-line"></div>
-                <h3>Libre no significa complicado.</h3>
+            <aside class="codex-panel reveal-right">
+                <div class="codex-line" aria-hidden="true"></div>
+                <h3>Altépet: raíz, comunidad y camino.</h3>
                 <p>
-                    Significa que tu equipo trabaja para ti: sin empujarte a cambiar hardware, sin depender de licencias cerradas y sin esconder lo que ocurre detrás de la pantalla.
+                    Nuestro símbolo mezcla montaña, ruta y luz. Representa estabilidad, guía y una forma más transparente
+                    de relacionarnos con la tecnología.
                 </p>
-            </div>
+            </aside>
         </section>
 
         <section class="section compare">
-            <div class="section-header fade-up">
+            <div class="section-header reveal-up">
                 <p class="eyebrow">Problema vs solución</p>
                 <h2>De la frustración al control.</h2>
             </div>
 
             <div class="compare-grid">
-                <article class="compare-card problem-card fade-up">
+                <article class="compare-card problem reveal-left">
                     <h3>Antes</h3>
                     <ul>
                         <li>Arranque lento y actualizaciones eternas.</li>
@@ -231,12 +255,12 @@
                     </ul>
                 </article>
 
-                <article class="compare-card solution-card fade-up">
+                <article class="compare-card solution reveal-right">
                     <h3>Con Altépet</h3>
                     <ul>
                         <li>Linux ligero, estable y configurado.</li>
+                        <li>Privacidad y seguridad desde el primer arranque.</li>
                         <li>Aplicaciones esenciales listas para usar.</li>
-                        <li>Privacidad y rendimiento como prioridad.</li>
                         <li>Soporte humano antes, durante y después.</li>
                     </ul>
                 </article>
@@ -244,135 +268,90 @@
         </section>
 
         <section id="servicios" class="section">
-            <div class="section-header fade-up">
+            <div class="section-header reveal-up">
                 <p class="eyebrow">Servicios</p>
                 <h2>Soluciones prácticas para recuperar tu equipo.</h2>
             </div>
 
-            <div class="services-grid">
-                <article class="service-card fade-up">
-                    <img
-                        src="https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?auto=format&fit=crop&w=800&q=80"
-                        alt="Laptop lista para trabajo"
-                        loading="lazy"
-                    >
+            <div class="services-grid stagger">
+                <article class="service-card">
+                    <img src="https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?auto=format&fit=crop&w=900&q=80" alt="Laptop preparada para trabajo" loading="lazy">
                     <div>
                         <span>01</span>
-                        <h3>Instalación y migración a Linux</h3>
-                        <p>Respaldamos tus archivos importantes, instalamos una distribución adecuada y dejamos tu equipo listo para estudiar, trabajar o navegar.</p>
+                        <h3>Instalación y migración</h3>
+                        <p>Respaldamos tus archivos importantes, instalamos una distribución adecuada y dejamos tu equipo listo.</p>
                     </div>
                 </article>
 
-                <article class="service-card fade-up">
-                    <img
-                        src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80"
-                        alt="Computadora con código y herramientas digitales"
-                        loading="lazy"
-                    >
+                <article class="service-card">
+                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=80" alt="Circuitos que representan optimización tecnológica" loading="lazy">
                     <div>
                         <span>02</span>
                         <h3>Optimización de equipos lentos</h3>
-                        <p>Revisamos recursos, limpiamos configuraciones innecesarias y elegimos un sistema que aproveche mejor tu hardware.</p>
+                        <p>Revisamos recursos, reducimos carga innecesaria y elegimos un sistema que aproveche tu hardware.</p>
                     </div>
                 </article>
 
-                <article class="service-card fade-up">
-                    <img
-                        src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=80"
-                        alt="Equipo de soporte trabajando con usuarios"
-                        loading="lazy"
-                    >
+                <article class="service-card">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=900&q=80" alt="Equipo dando soporte técnico" loading="lazy">
                     <div>
                         <span>03</span>
                         <h3>Soporte remoto y humano</h3>
-                        <p>Resolvemos dudas, configuramos programas y te acompañamos para que no dependas de tutoriales confusos.</p>
+                        <p>Resolvemos dudas, configuramos programas y te acompañamos sin tecnicismos innecesarios.</p>
                     </div>
                 </article>
             </div>
         </section>
 
-        <section id="funciona" class="section process">
-            <div class="section-header fade-up">
+        <section id="funciona" class="section">
+            <div class="section-header reveal-up">
                 <p class="eyebrow">Cómo funciona</p>
-                <h2>Un camino claro para dejar de pelearte con tu computadora.</h2>
+                <h2>Un proceso claro, sin complicaciones.</h2>
             </div>
 
-            <div class="timeline">
-                <div class="timeline-item fade-up">
+            <div class="timeline stagger">
+                <article class="timeline-item">
                     <span>1</span>
                     <h3>Diagnóstico</h3>
-                    <p>Nos cuentas qué falla, qué equipo tienes y qué necesitas hacer todos los días.</p>
-                </div>
+                    <p>Revisamos tu equipo, tus necesidades y el problema principal.</p>
+                </article>
 
-                <div class="timeline-item fade-up">
+                <article class="timeline-item">
                     <span>2</span>
-                    <h3>Elegimos tu distribución</h3>
-                    <p>Seleccionamos una versión de Linux adecuada para tu hardware y nivel de experiencia.</p>
-                </div>
+                    <h3>Elegimos Linux contigo</h3>
+                    <p>Seleccionamos una distribución adecuada para tu hardware y forma de trabajo.</p>
+                </article>
 
-                <div class="timeline-item fade-up">
+                <article class="timeline-item">
                     <span>3</span>
                     <h3>Instalación experta</h3>
-                    <p>Configuramos sistema, navegador, oficina, multimedia, privacidad y actualizaciones.</p>
-                </div>
+                    <p>Configuramos sistema, programas, privacidad, actualizaciones y apariencia.</p>
+                </article>
 
-                <div class="timeline-item fade-up">
+                <article class="timeline-item">
                     <span>4</span>
                     <h3>Soporte continuo</h3>
-                    <p>Te acompañamos después de la entrega para resolver dudas y ajustar lo necesario.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="section story">
-            <div class="section-header fade-up">
-                <p class="eyebrow">El camino de Altépet</p>
-                <h2>Una respuesta contra la obsolescencia programada.</h2>
-            </div>
-
-            <div class="story-grid">
-                <div class="story-step fade-up">Software cada vez más pesado</div>
-                <div class="story-step fade-up">Usuarios frustrados</div>
-                <div class="story-step fade-up">Linux como alternativa real</div>
-                <div class="story-step fade-up">Soporte humano para hacerlo simple</div>
-                <div class="story-step fade-up">Altépet: tecnología libre para todos</div>
-            </div>
-        </section>
-
-        <section class="section testimonials">
-            <div class="section-header fade-up">
-                <p class="eyebrow">Voces del piloto</p>
-                <h2>Historias que queremos multiplicar.</h2>
-            </div>
-
-            <div class="testimonial-grid">
-                <article class="testimonial-card fade-up">
-                    <p>“Pensé que mi laptop ya no servía. Después de la instalación volvió a sentirse rápida para clases, documentos y videollamadas.”</p>
-                    <strong>Usuario piloto</strong>
-                </article>
-
-                <article class="testimonial-card fade-up">
-                    <p>“Lo mejor fue que no me dejaron solo. Me explicaron qué cambió y cómo usar el sistema sin hablarme como si fuera experto.”</p>
-                    <strong>Usuario piloto</strong>
+                    <p>Te acompañamos para que puedas usar tu equipo con confianza.</p>
                 </article>
             </div>
         </section>
 
-        <section id="piloto" class="section pilot">
-            <div class="pilot-content fade-up">
+        <section id="piloto" class="section pilot reveal-up">
+            <div>
                 <p class="eyebrow">Programa de usuarios piloto</p>
                 <h2>Prueba Altépet antes del lanzamiento formal.</h2>
                 <p>
-                    Buscamos personas con equipos lentos, dudas sobre Linux o interés en recuperar privacidad. Recibirás diagnóstico, instalación y acompañamiento. A cambio, nos das feedback antes, durante y después del servicio.
+                    Buscamos usuarios con equipos lentos, dudas sobre Linux o interés en recuperar privacidad.
+                    Recibirás diagnóstico, instalación y acompañamiento. A cambio, nos das feedback antes, durante y después.
                 </p>
             </div>
 
-            <div class="pilot-card fade-up">
+            <div class="pilot-card">
                 <h3>Ideal para ti si...</h3>
                 <ul>
                     <li>Tu equipo tarda demasiado en arrancar.</li>
                     <li>Quieres probar Linux sin hacerlo solo.</li>
-                    <li>Te importa la privacidad.</li>
+                    <li>Te importa la privacidad y la seguridad.</li>
                     <li>No quieres comprar otra computadora todavía.</li>
                 </ul>
                 <a href="#contacto" class="btn btn-primary">Aplicar al piloto</a>
@@ -380,49 +359,50 @@
         </section>
 
         <section id="faq" class="section">
-            <div class="section-header fade-up">
+            <div class="section-header reveal-up">
                 <p class="eyebrow">FAQ</p>
                 <h2>Preguntas frecuentes antes de dar el salto.</h2>
             </div>
 
-            <div class="faq-list fade-up">
+            <div class="faq-list reveal-up">
                 <details>
                     <summary>¿Perderé mis archivos?</summary>
-                    <p>No. Antes de instalar, revisamos tus archivos importantes y hacemos respaldo. La prioridad es conservar tu información.</p>
+                    <p>No. Antes de instalar revisamos tus archivos importantes y hacemos respaldo.</p>
                 </details>
 
                 <details>
                     <summary>¿Es difícil usar Linux?</summary>
-                    <p>No tiene por qué serlo. Elegimos una distribución amigable, la dejamos configurada y te damos una guía básica para iniciar con confianza.</p>
+                    <p>No tiene por qué serlo. Elegimos una distribución amigable, la dejamos configurada y te guiamos.</p>
                 </details>
 
                 <details>
                     <summary>¿Puedo usar Word, Excel y PowerPoint?</summary>
-                    <p>Sí. Puedes usar Microsoft 365 desde el navegador, Google Docs o alternativas como LibreOffice, según tu flujo de trabajo.</p>
+                    <p>Sí. Puedes usar Microsoft 365 en navegador, Google Docs o alternativas como LibreOffice.</p>
+                </details>
+
+                <details>
+                    <summary>¿Linux es más seguro?</summary>
+                    <p>Bien configurado, Linux ofrece un modelo sólido de permisos, actualizaciones centralizadas y menos exposición a malware común.</p>
                 </details>
 
                 <details>
                     <summary>¿Puedo volver a Windows si no me adapto?</summary>
-                    <p>Sí. Podemos hablar de opciones antes de instalar. También podemos configurar arranque dual cuando el equipo y tus necesidades lo permitan.</p>
-                </details>
-
-                <details>
-                    <summary>¿Linux sirve para trabajo, escuela y videollamadas?</summary>
-                    <p>Sí. Navegador, correo, documentos, videollamadas, programación, multimedia y tareas diarias funcionan muy bien en equipos correctamente configurados.</p>
+                    <p>Sí. Antes de instalar podemos hablar de respaldo, arranque dual o rutas de regreso.</p>
                 </details>
             </div>
         </section>
 
         <section id="contacto" class="section contact">
-            <div class="contact-copy fade-up">
+            <div class="contact-copy reveal-left">
                 <p class="eyebrow">Contacto</p>
                 <h2>Cuéntanos qué le pasa a tu equipo.</h2>
                 <p>
-                    Escríbenos qué computadora tienes, qué problema presenta y qué necesitas hacer con ella. Te responderemos con una ruta clara.
+                    Escríbenos qué computadora tienes, qué problema presenta y qué necesitas hacer con ella.
+                    Te responderemos con una ruta clara.
                 </p>
             </div>
 
-            <form class="contact-form fade-up" action="mailto:altepet.tech@gmail.com" method="post" enctype="text/plain">
+            <form class="contact-form reveal-right" action="mailto:altepet.tech@gmail.com" method="post" enctype="text/plain">
                 <label>
                     Nombre
                     <input type="text" name="nombre" placeholder="Tu nombre" required>
@@ -435,7 +415,7 @@
 
                 <label>
                     Equipo actual o problema
-                    <input type="text" name="equipo" placeholder="Ej. Laptop lenta, Windows tarda mucho, quiero probar Linux" required>
+                    <input type="text" name="equipo" placeholder="Ej. Laptop lenta, quiero probar Linux" required>
                 </label>
 
                 <label>
@@ -444,37 +424,38 @@
                 </label>
 
                 <button class="btn btn-primary" type="submit">Enviar mensaje</button>
+                <p class="form-note">Al enviar, se abrirá tu app de correo para mandar el mensaje a altepet.tech@gmail.com.</p>
             </form>
         </section>
-
     </main>
 
     <footer class="site-footer">
-        <div class="footer-main">
-            <a href="#" class="footer-logo">
-                <span class="logo-frame">
+        <div>
+            <a href="index.html" class="footer-logo">
+                <span class="logo-shell">
                     <img src="assets/logo-altepet.png" alt="Logo Altépet">
                 </span>
             </a>
             <p>Altépet - Tecnología transparente y libre.</p>
         </div>
 
-        <div class="footer-links">
-            <a href="#significado">Qué significa</a>
+        <nav class="footer-links" aria-label="Enlaces de pie de página">
             <a href="#beneficios">Beneficios</a>
+            <a href="#seguridad">Seguridad</a>
             <a href="#servicios">Servicios</a>
+                <a href="distribuciones.html">Distribuciones</a>
             <a href="#piloto">Piloto</a>
-            <a href="#faq">FAQ</a>
             <a href="#contacto">Contacto</a>
-        </div>
+            <a href="distribuciones.html">Distribuciones</a>
+        </nav>
 
-        <div class="footer-social">
-            <a href="#" aria-label="GitHub">GitHub</a>
-            <a href="#" aria-label="LinkedIn">LinkedIn</a>
-            <a href="mailto:altepet.tech@gmail.com">Correo</a>
+        <div class="footer-links">
+            <a href="mailto:altepet.tech@gmail.com">altepet.tech@gmail.com</a>
+            <a href="#">GitHub</a>
+            <a href="#">LinkedIn</a>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>

@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problemas comunes en Linux | Altépet</title>
+
+    <meta name="description" content="Soluciones claras para problemas comunes en Linux: WiFi, internet, audio, Bluetooth, impresoras, lentitud, disco lleno, programas alternativos, Steam, Office y drivers NVIDIA.">
+    <meta name="keywords" content="problemas Linux, WiFi Linux no funciona, Linux lento, impresora Linux, Bluetooth Linux, audio Linux, drivers NVIDIA Linux, programas alternativos Linux, soporte Linux México">
+    <meta name="author" content="Altépet">
+    <meta name="theme-color" content="#0F3A5F">
+
+    <meta property="og:title" content="Problemas comunes en Linux | Altépet">
+    <meta property="og:description" content="Guía práctica para diagnosticar problemas comunes de Linux sin entrar en pánico.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/logo-altepet.png">
+
+    
+    <link rel="canonical" href="https://altepet.tech/problemas-comunes.html">
+    <link rel="manifest" href="manifest.json">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="problemas Linux, WiFi Linux no funciona, Linux lento, impresora Linux, Bluetooth Linux, audio Linux, drivers NVIDIA Linux">
+
+    <meta property="og:title" content="Problemas comunes en Linux | Altépet">
+    <meta property="og:description" content="Soluciones claras para problemas comunes en Linux: WiFi, internet, audio, Bluetooth, impresoras, lentitud, NVIDIA, Office y Steam.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://altepet.tech/problemas-comunes.html">
+    <meta property="og:image" content="https://altepet.tech/assets/logo-altepet.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Problemas comunes en Linux | Altépet">
+    <meta name="twitter:description" content="Soluciones claras para problemas comunes en Linux: WiFi, internet, audio, Bluetooth, impresoras, lentitud, NVIDIA, Office y Steam.">
+    <meta name="twitter:image" content="https://altepet.tech/assets/logo-altepet.png">
+
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "Altépet", "url": "https://altepet.tech", "email": "altepet.tech@gmail.com", "description": "Tecnología rápida, estable y libre con Linux, privacidad y soporte humano.", "logo": "https://altepet.tech/assets/logo-altepet.png"}</script>
+
+    <link rel="icon" href="assets/logo-altepet.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <header class="site-header" id="siteHeader">
+        <nav class="navbar" aria-label="Navegación principal">
+            <a href="index.html" class="brand" aria-label="Altépet inicio">
+                <span class="logo-shell">
+                    <img src="assets/logo-altepet.png" alt="Logo Altépet">
+                </span>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html">Inicio</a>
+                <a href="distribuciones.html">Distribuciones</a>
+                <a href="gestores.html">Gestores</a>
+                <a href="atajos.html">Atajos</a>
+                <a href="#buscador">Buscar</a>
+                <a href="#diagnostico">Diagnóstico</a>
+                <a href="#problemas">Problemas</a>
+
+                <button class="theme-toggle" id="themeToggle" type="button" aria-label="Cambiar tema">
+                    <span id="themeIcon">🌙</span>
+                </button>
+
+                <a href="index.html#contacto" class="nav-cta">Pedir soporte</a>
+            </div>
+        </nav>
+    </header>
+
+    <main id="contenido">
+        <section class="page-hero problems-hero">
+            <div class="mesh mesh-one" aria-hidden="true"></div>
+            <div class="codex-orb" aria-hidden="true"></div>
+
+            <div class="page-hero-copy reveal-left">
+                <p class="eyebrow">Soporte Altépet</p>
+                <h1>Problemas comunes en Linux, explicados sin drama.</h1>
+                <p class="hero-text">
+                    Si algo falla, no significa que Linux no sirva. Muchas veces es un ajuste de red, drivers,
+                    permisos, repositorios o compatibilidad. Esta guía te ayuda a identificar el problema antes de tocar de más.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#buscador" class="btn btn-primary">Buscar problema</a>
+                    <a href="#diagnostico" class="btn btn-secondary">Diagnóstico rápido</a>
+                </div>
+
+                <div class="hero-badges">
+                    <span>WiFi</span>
+                    <span>Audio</span>
+                    <span>Impresoras</span>
+                    <span>Rendimiento</span>
+                </div>
+            </div>
+
+            <div class="page-hero-visual reveal-right">
+                <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=1100&q=80" alt="Soporte técnico revisando una laptop" loading="eager">
+            </div>
+        </section>
+
+        <section id="buscador" class="section problem-search-section">
+            <div class="section-header reveal-up">
+                <p class="eyebrow">Buscador local</p>
+                <h2>Encuentra una posible causa.</h2>
+                <p>
+                    Escribe palabras como “wifi”, “audio”, “impresora”, “lento”, “NVIDIA”, “Office” o “Steam”.
+                    El filtro funciona en tu navegador, sin enviar datos a ningún servidor.
+                </p>
+            </div>
+
+            <div class="problem-search reveal-up">
+                <input id="problemSearch" type="search" placeholder="Buscar problema... Ej. wifi, audio, impresora, lento">
+                <span id="problemCount">Mostrando todos los problemas</span>
+            </div>
+        </section>
+
+        <section id="diagnostico" class="section">
+            <div class="section-header reveal-up">
+                <p class="eyebrow">Diagnóstico rápido</p>
+                <h2>Antes de ejecutar comandos: observa esto.</h2>
+            </div>
+
+            <div class="diagnostic-grid stagger">
+                <article class="diagnostic-card">
+                    <span class="icon">1</span>
+                    <h3>¿Cuándo empezó?</h3>
+                    <p>Después de instalar, actualizar, conectar un dispositivo o cambiar configuración.</p>
+                </article>
+
+                <article class="diagnostic-card">
+                    <span class="icon">2</span>
+                    <h3>¿Afecta a todo o solo a una app?</h3>
+                    <p>Si solo falla una app, probablemente no es problema del sistema completo.</p>
+                </article>
+
+                <article class="diagnostic-card">
+                    <span class="icon">3</span>
+                    <h3>¿Tu hardware está detectado?</h3>
+                    <p>WiFi, audio, Bluetooth e impresoras dependen mucho del hardware y drivers.</p>
+                </article>
+
+                <article class="diagnostic-card">
+                    <span class="icon">4</span>
+                    <h3>¿Hay espacio y memoria?</h3>
+                    <p>Un disco lleno o poca RAM puede hacer que todo parezca roto.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="problemas" class="section">
+            <div class="section-header reveal-up">
+                <p class="eyebrow">Casos frecuentes</p>
+                <h2>Problemas comunes y rutas seguras.</h2>
+                <p>
+                    Estas tarjetas no reemplazan soporte técnico, pero te ayudan a entender qué revisar primero.
+                </p>
+            </div>
+
+            <div class="problem-grid stagger" id="problemGrid">
+                <article class="problem-card" data-tags="wifi internet red no aparece adaptador conexión">
+                    <div class="problem-head">
+                        <span>📶</span>
+                        <div>
+                            <p class="eyebrow">Red</p>
+                            <h3>El WiFi no aparece</h3>
+                        </div>
+                    </div>
+                    <p>Puede deberse a drivers, firmware faltante, modo avión o adaptadores no soportados.</p>
+                    <h4>Revisa primero</h4>
+                    <ul>
+                        <li>Que el modo avión esté desactivado.</li>
+                        <li>Si Ethernet funciona.</li>
+                        <li>Si el adaptador aparece en configuración de red.</li>
+                    </ul>
+                    <div class="command-line"><code>ip a</code><button class="copy-btn" data-copy="ip a">Copiar</button></div>
+                    <p class="altepet-note">Altépet revisa chipset WiFi antes de recomendar una distribución.</p>
+                </article>
+
+                <article class="problem-card" data-tags="internet dns navegador páginas no cargan red">
+                    <div class="problem-head">
+                        <span>🌐</span>
+                        <div>
+                            <p class="eyebrow">Internet</p>
+                            <h3>Tengo red, pero no cargan páginas</h3>
+                        </div>
+                    </div>
+                    <p>Si estás conectado pero no navegas, puede ser DNS, router o configuración de red.</p>
+                    <h4>Revisa primero</h4>
+                    <ul>
+                        <li>Prueba otra página.</li>
+                        <li>Reinicia router.</li>
+                        <li>Comprueba si otros dispositivos navegan.</li>
+                    </ul>
+                    <div class="command-line"><code>ping 1.1.1.1</code><button class="copy-btn" data-copy="ping 1.1.1.1">Copiar</button></div>
+                    <p class="altepet-note">Si responde por IP pero no por nombre, probablemente es DNS.</p>
+                </article>
+
+                <article class="problem-card" data-tags="audio sonido bocinas micrófono volumen no se escucha">
+                    <div class="problem-head">
+                        <span>🔊</span>
+                        <div>
+                            <p class="eyebrow">Audio</p>
+                            <h3>No tengo sonido</h3>
+                        </div>
+                    </div>
+                    <p>Puede ser salida incorrecta, volumen silenciado, PipeWire/PulseAudio o hardware no detectado.</p>
+                    <h4>Revisa primero</h4>
+                    <ul>
+                        <li>Salida de audio seleccionada.</li>
+                        <li>Volumen del sistema y de la app.</li>
+                        <li>Audífonos Bluetooth o HDMI activos por error.</li>
+                    </ul>
+                    <div class="command-line"><code>pactl info</code><button class="copy-btn" data-copy="pactl info">Copiar</button></div>
+                    <p class="altepet-note">Altépet deja configuradas salidas comunes y prueba audio antes de entregar.</p>
+                </article>
+
+                <article class="problem-card" data-tags="bluetooth audifonos mouse teclado no conecta">
+                    <div class="problem-head">
+                        <span>🟦</span>
+                        <div>
+                            <p class="eyebrow">Bluetooth</p>
+                            <h3>Bluetooth no conecta</h3>
+                        </div>
+                    </div>
+                    <p>Los problemas más comunes son servicio detenido, emparejamiento previo o adaptador no reconocido.</p>
+                    <h4>Revisa primero</h4>
+                    <ul>
+                        <li>Olvida el dispositivo y empareja de nuevo.</li>
+                        <li>Verifica batería del dispositivo.</li>
+                        <li>Reinicia Bluetooth desde ajustes.</li>
+                    </ul>
+                    <div class="command-line"><code>systemctl status bluetooth</code><button class="copy-btn" data-copy="systemctl status bluetooth">Copiar</button></div>
+                    <p class="altepet-note">En laptops antiguas a veces conviene usar adaptador Bluetooth USB compatible.</p>
+                </article>
+
+                <article class="problem-card" data-tags="impresora imprimir scanner hp canon epson no aparece">
+                    <div class="problem-head">
+                        <span>🖨️</span>
+                        <div>
+                            <p class="eyebrow">Hardware</p>
+                            <h3>No aparece la impresora</h3>
+                        </div>
+                    </div>
+                    <p>Linux soporta muchas impresoras, pero algunas requieren drivers, CUPS o configuración de red.</p>
+                    <h4>Revisa primero</h4>
+                    <ul>
+                        <li>Si la impresora está en la misma red.</li>
+                        <li>Si imprime desde otro equipo.</li>
+                        <li>Marca y modelo exacto.</li>
+                    </ul>
+                    <div class="command-line"><code>systemctl status cups</code><button class="copy-btn" data-copy="systemctl status cups">Copiar</button></div>
+                    <p class="altepet-note">Altépet puede revisar compatibilidad antes de migrar equipos de oficina.</p>
+                </article>
+
+                <article class="problem-card" data-tags="linux lento rendimiento ram cpu disco tarda mucho se congela">
+                    <div class="problem-head">
+                        <span>🐢</span>
+                        <div>
+                            <p class="eyebrow">Rendimiento</p>
+                            <h3>Linux va lento</h3>
+                        </div>
+                    </div>
+                    <p>Puede ser falta de RAM, disco duro mecánico, entorno pesado, apps al inicio o poco espacio.</p>
+                    <h4>Revisa primero</h4>
+                    <ul>
+                        <li>Uso de RAM y CPU.</li>
+                        <li>Espacio disponible.</li>
+                        <li>Si usas GNOME/KDE en hardware muy limitado.</li>
+                    </ul>
+                    <div class="command-line"><code>free -h && df -h</code><button class="copy-btn" data-copy="free -h && df -h">Copiar</button></div>
+                    <p class="altepet-note">Muchas laptops mejoran mucho con SSD + XFCE/Mint/Lubuntu.</p>
+                </article>
+
+                <article class="problem-card" data-tags="disco lleno almacenamiento espacio archivos limpiar">
+                    <div class="problem-head">
+                        <span>💾</span>
+                        <div>
+                            <p class="eyebrow">Almacenamiento</p>
+                            <h3>El disco está lleno</h3>
+                        </div>
+                    </div>
+                    <p>Un disco lleno causa lentitud, errores de actualización y fallos al abrir aplicaciones.</p>
+                    <h4>Revisa primero</h4>
+                    <ul>
+                        <li>Descargas y videos pesados.</li>
+                        <li>Cachés antiguas.</li>
+                        <li>Snapshots o backups acumulados.</li>
+                    </ul>
+                    <div class="command-line"><code>df -h</code><button class="copy-btn" data-copy="df -h">Copiar</button></div>
+                    <p class="altepet-note">No borres carpetas del sistema sin saber qué hacen.</p>
+                </article>
+
+                <article class="problem-card" data-tags="nvidia drivers pantalla negra gpu juegos steam">
+                    <div class="problem-head">
+                        <span>🎮</span>
+                        <div>
+                            <p class="eyebrow">Gráficos</p>
+                            <h3>Problemas con NVIDIA</h3>
+                        </div>
+                    </div>
+                    <p>NVIDIA puede requerir drivers propietarios, versión correcta del kernel y configuración especial.</p>
+                    <h4>Revisa primero</h4>
+                    <ul>
+                        <li>Distribución usada.</li>
+                        <li>Modelo exacto de GPU.</li>
+                        <li>Si falla después de actualizar.</li>
+                    </ul>
+                    <div class="command-line"><code>lspci | grep -i nvidia</code><button class="copy-btn" data-copy="lspci | grep -i nvidia">Copiar</button></div>
+                    <p class="altepet-note">Para gaming, Altépet elige distros pensando en tu GPU.</p>
+                </article>
+
+                <article class="problem-card" data-tags="office word excel powerpoint microsoft libreoffice documentos">
+                    <div class="problem-head">
+                        <span>📄</span>
+                        <div>
+                            <p class="eyebrow">Software</p>
+                            <h3>No encuentro Word o Excel</h3>
+                        </div>
+                    </div>
+                    <p>En Linux puedes usar Microsoft 365 en navegador, Google Docs o LibreOffice.</p>
+                    <h4>Revisa primero</h4>
+                    <ul>
+                        <li>Si necesitas macros avanzadas.</li>
+                        <li>Compatibilidad con documentos de escuela/trabajo.</li>
+                        <li>Uso en navegador vs app local.</li>
+                    </ul>
+                    <div class="command-line"><code>libreoffice</code><button class="copy-btn" data-copy="libreoffice">Copiar</button></div>
+                    <p class="altepet-note">Altépet configura la opción más práctica según tu caso.</p>
+                </article>
+
+                <article class="problem-card" data-tags="steam juegos proton lutris epic videojuegos no abre">
+                    <div class="problem-head">
+                        <span>🕹️</span>
+                        <div>
+                            <p class="eyebrow">Gaming</p>
+                            <h3>Steam o juegos no abren</h3>
+                        </div>
+                    </div>
+                    <p>Puede ser Proton, drivers gráficos, librerías faltantes o compatibilidad del juego.</p>
+                    <h4>Revisa primero</h4>
+                    <ul>
+                        <li>Activar Steam Play/Proton.</li>
+                        <li>Actualizar drivers.</li>
+                        <li>Consultar compatibilidad del juego.</li>
+                    </ul>
+                    <div class="command-line"><code>steam</code><button class="copy-btn" data-copy="steam">Copiar</button></div>
+                    <p class="altepet-note">Para gaming recomendamos Bazzite, Nobara, Garuda o Pop!_OS según hardware.</p>
+                </article>
+
+                <article class="problem-card" data-tags="programas alternativas photoshop autocad adobe discord zoom">
+                    <div class="problem-head">
+                        <span>🧩</span>
+                        <div>
+                            <p class="eyebrow">Aplicaciones</p>
+                            <h3>No encuentro mi programa</h3>
+                        </div>
+                    </div>
+                    <p>Algunos programas no tienen versión Linux, pero puede haber alternativas, web apps o ejecución por compatibilidad.</p>
+                    <h4>Revisa primero</h4>
+                    <ul>
+                        <li>Si existe versión web.</li>
+                        <li>Alternativas libres.</li>
+                        <li>Si necesitas Windows para un programa crítico.</li>
+                    </ul>
+                    <div class="command-line"><code>flatpak search nombre</code><button class="copy-btn" data-copy="flatpak search nombre">Copiar</button></div>
+                    <p class="altepet-note">Antes de migrar, Altépet revisa tus programas indispensables.</p>
+                </article>
+
+                <article class="problem-card" data-tags="actualizacion error repositorios paquetes apt dnf pacman">
+                    <div class="problem-head">
+                        <span>🔄</span>
+                        <div>
+                            <p class="eyebrow">Actualizaciones</p>
+                            <h3>Fallan las actualizaciones</h3>
+                        </div>
+                    </div>
+                    <p>Puede deberse a repositorios caídos, paquetes bloqueados, conexión o una actualización interrumpida.</p>
+                    <h4>Revisa primero</h4>
+                    <ul>
+                        <li>Conexión estable.</li>
+                        <li>No cerrar el equipo durante actualizaciones.</li>
+                        <li>Leer el mensaje de error completo.</li>
+                    </ul>
+                    <div class="command-line"><code>sudo apt update</code><button class="copy-btn" data-copy="sudo apt update">Copiar</button></div>
+                    <p class="altepet-note">Si no sabes qué significa el error, no fuerces comandos destructivos.</p>
+                </article>
+            </div>
+
+            <div class="empty-state" id="emptyProblems" hidden>
+                <h3>No encontré coincidencias.</h3>
+                <p>Prueba con otra palabra como “wifi”, “audio”, “lento”, “office”, “nvidia” o “impresora”.</p>
+            </div>
+        </section>
+
+        <section class="section safety-section">
+            <div class="section-header reveal-up">
+                <p class="eyebrow">Buenas prácticas</p>
+                <h2>Qué NO hacer cuando algo falla.</h2>
+            </div>
+
+            <div class="safety-grid stagger">
+                <article class="safety-card">
+                    <h3>No pegues comandos peligrosos</h3>
+                    <p>Evita comandos con <code>rm -rf</code>, permisos de administrador o scripts externos si no sabes qué hacen.</p>
+                </article>
+                <article class="safety-card">
+                    <h3>No borres carpetas del sistema</h3>
+                    <p>Carpetas como <code>/etc</code>, <code>/usr</code> o <code>/boot</code> son delicadas.</p>
+                </article>
+                <article class="safety-card">
+                    <h3>No reinstales sin respaldo</h3>
+                    <p>Antes de cualquier cambio grande, respalda documentos, fotos y archivos de trabajo.</p>
+                </article>
+                <article class="safety-card">
+                    <h3>No mezcles tutoriales al azar</h3>
+                    <p>Un tutorial para Arch no siempre aplica a Ubuntu. Uno para Fedora no siempre aplica a Mint.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section distro-faq">
+            <div class="section-header reveal-up">
+                <p class="eyebrow">FAQ de soporte</p>
+                <h2>Dudas comunes cuando algo se rompe.</h2>
+            </div>
+
+            <div class="faq-list reveal-up">
+                <details>
+                    <summary>¿Tengo que reinstalar Linux si algo falla?</summary>
+                    <p>No necesariamente. Muchos problemas se resuelven ajustando drivers, servicios, repositorios o configuración.</p>
+                </details>
+                <details>
+                    <summary>¿Linux falla menos que Windows?</summary>
+                    <p>Linux puede ser muy estable, pero depende de hardware, distribución, drivers y configuración. Un buen diagnóstico importa mucho.</p>
+                </details>
+                <details>
+                    <summary>¿Altépet puede revisar mi equipo antes de instalar?</summary>
+                    <p>Sí. Esa es una parte clave del servicio: revisar hardware, programas críticos y necesidades reales.</p>
+                </details>
+                <details>
+                    <summary>¿Puedo pedir soporte después de la instalación?</summary>
+                    <p>Sí. Altépet está pensado como servicio con acompañamiento, no solo como instalación rápida.</p>
+                </details>
+            </div>
+        </section>
+
+        <section class="section pilot reveal-up">
+            <div>
+                <p class="eyebrow">Soporte Altépet</p>
+                <h2>Si no quieres resolverlo solo, te acompañamos.</h2>
+                <p>
+                    Revisamos tu problema, explicamos qué está pasando y proponemos una solución segura sin improvisar comandos.
+                </p>
+            </div>
+
+            <div class="pilot-card">
+                <h3>Podemos ayudarte con</h3>
+                <ul>
+                    <li>WiFi, Bluetooth, audio e impresoras.</li>
+                    <li>Rendimiento y limpieza segura.</li>
+                    <li>Programas alternativos.</li>
+                    <li>Drivers y actualizaciones.</li>
+                </ul>
+                <a href="index.html#contacto" class="btn btn-primary">Pedir soporte</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div>
+            <a href="index.html" class="footer-logo">
+                <span class="logo-shell">
+                    <img src="assets/logo-altepet.png" alt="Logo Altépet">
+                </span>
+            </a>
+            <p>Altépet - Tecnología transparente y libre.</p>
+        </div>
+
+        <nav class="footer-links" aria-label="Enlaces de pie de página">
+            <a href="index.html">Inicio</a>
+            <a href="distribuciones.html">Distribuciones</a>
+            <a href="gestores.html">Gestores</a>
+            <a href="atajos.html">Atajos</a>
+            <a href="#problemas">Problemas</a>
+        </nav>
+
+        <div class="footer-links">
+            <a href="mailto:altepet.tech@gmail.com">altepet.tech@gmail.com</a>
+            <a href="index.html#contacto">Contacto</a>
+            <a href="#buscador">Buscador</a>
+        </div>
+    </footer>
+
+    <div class="toast" id="copyToast" role="status" aria-live="polite">Comando copiado</div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

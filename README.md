@@ -1,40 +1,45 @@
-# Altépet Landing Page
+# Altépet V3.5 — Versión Final Profesional
 
-Landing page estática lista para GitHub Pages.
+Sitio estático completo listo para GitHub Pages.
 
-## Archivos
+## Páginas incluidas
 
-```text
-altepet-landing-v3/
-├── index.html
-├── style.css
-├── script.js
-├── README.md
-└── assets/
-    └── logo-altepet.png
-```
+- `index.html` — Landing principal.
+- `distribuciones.html` — Distribuciones Linux + comparador.
+- `gestores.html` — Entornos y gestores de ventanas.
+- `atajos.html` — Atajos y comandos básicos.
+- `problemas-comunes.html` — Problemas comunes + buscador local.
+- `404.html` — Página de error.
+- `robots.txt`
+- `sitemap.xml`
+- `manifest.json`
 
-## Incluye
+## Funciones
 
-- Logo real de Altépet en navbar, sección principal y footer.
-- Paleta oficial:
-  - Azul profundo: `#0F3A5F`
-  - Verde jade: `#26A69A`
-  - Fondo: `#F8F9FA`
-  - Texto: `#4A5568`
-  - Bordes: `#E2E8F0`
-- Imágenes externas desde Unsplash.
-- Menú hamburguesa responsive.
-- Dark mode.
-- Animaciones suaves.
-- FAQ.
-- Formulario listo para conectar con Formspree, EmailJS o Supabase.
+- Paleta oficial de Altépet.
+- Logo integrado.
+- Responsive móvil/tablet/escritorio.
+- Dark mode persistente.
+- Animaciones on-scroll.
+- Comparadores interactivos.
+- Buscador local de problemas.
+- Copiar comandos al portapapeles.
+- SEO y Open Graph.
+- JSON-LD Organization.
+- Preparado para `altepet.tech`.
 
-## Nota sobre imágenes externas
+## Despliegue en GitHub Pages
 
-Las imágenes se cargan desde URLs externas de Unsplash. Para producción, conviene descargarlas, optimizarlas y guardarlas en `assets/`.
+1. Sube todo el contenido de esta carpeta a tu repositorio.
+2. En GitHub: Settings → Pages.
+3. Source: Deploy from branch.
+4. Branch: `main`, carpeta `/root`.
+5. Conecta tu dominio `altepet.tech`.
+6. Asegúrate de crear el archivo `CNAME` con:
+   ```txt
+   altepet.tech
+   ```
 
-## Cambios de esta versión corregida
+## Nota
 
-- Logo dentro de tarjeta clara adaptable para que se vea bien en modo claro y oscuro.
-- Sección piloto corregida: en modo oscuro conserva azul profundo y jade, evitando el bloque celeste con bajo contraste.
+Las imágenes externas vienen desde Unsplash. Para producción ideal, descárgalas, optimízalas en `.webp` y guárdalas en `assets/`.

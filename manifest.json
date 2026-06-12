@@ -1,0 +1,17 @@
+{
+  "name": "Altépet",
+  "short_name": "Altépet",
+  "description": "Tecnología rápida, estable y libre con Linux, privacidad y soporte humano.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F8F9FA",
+  "theme_color": "#0F3A5F",
+  "icons": [
+    {
+      "src": "assets/logo-altepet.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

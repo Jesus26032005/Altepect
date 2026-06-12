@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entornos y gestores de ventanas Linux | Altépet</title>
+
+    <meta name="description" content="Compara entornos de escritorio y gestores de ventanas Linux: GNOME, KDE Plasma, XFCE, Cinnamon, Hyprland, Niri e i3. Guía Altépet para elegir según facilidad, rendimiento y flujo de trabajo.">
+    <meta name="keywords" content="gestores de ventanas Linux, entornos de escritorio Linux, GNOME, KDE Plasma, XFCE, Cinnamon, Hyprland, Niri, i3, Wayland, Linux México">
+    <meta name="author" content="Altépet">
+    <meta name="theme-color" content="#0F3A5F">
+
+    <meta property="og:title" content="Entornos y gestores de ventanas Linux | Altépet">
+    <meta property="og:description" content="Elige entre GNOME, KDE, XFCE, Cinnamon, Hyprland, Niri e i3 con una guía clara para usuarios reales.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/logo-altepet.png">
+
+    
+    <link rel="canonical" href="https://altepet.tech/gestores.html">
+    <link rel="manifest" href="manifest.json">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="gestores de ventanas Linux, entornos de escritorio Linux, GNOME, KDE Plasma, XFCE, Cinnamon, Hyprland, Niri, i3">
+
+    <meta property="og:title" content="Entornos y gestores de ventanas Linux | Altépet">
+    <meta property="og:description" content="Compara GNOME, KDE Plasma, XFCE, Cinnamon, Hyprland, Niri e i3 para elegir el escritorio Linux ideal.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://altepet.tech/gestores.html">
+    <meta property="og:image" content="https://altepet.tech/assets/logo-altepet.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Entornos y gestores de ventanas Linux | Altépet">
+    <meta name="twitter:description" content="Compara GNOME, KDE Plasma, XFCE, Cinnamon, Hyprland, Niri e i3 para elegir el escritorio Linux ideal.">
+    <meta name="twitter:image" content="https://altepet.tech/assets/logo-altepet.png">
+
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "Altépet", "url": "https://altepet.tech", "email": "altepet.tech@gmail.com", "description": "Tecnología rápida, estable y libre con Linux, privacidad y soporte humano.", "logo": "https://altepet.tech/assets/logo-altepet.png"}</script>
+
+    <link rel="icon" href="assets/logo-altepet.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <header class="site-header" id="siteHeader">
+        <nav class="navbar" aria-label="Navegación principal">
+            <a href="index.html" class="brand" aria-label="Altépet inicio">
+                <span class="logo-shell">
+                    <img src="assets/logo-altepet.png" alt="Logo Altépet">
+                </span>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html">Inicio</a>
+                <a href="distribuciones.html">Distribuciones</a>
+                <a href="atajos.html">Atajos</a>
+                <a href="problemas-comunes.html">Problemas</a>
+                <a href="#entornos">Entornos</a>
+                <a href="#tiling">Tiling</a>
+                <a href="#tabla">Comparativa</a>
+                <a href="#recomendador">Recomendador</a>
+
+                <button class="theme-toggle" id="themeToggle" type="button" aria-label="Cambiar tema">
+                    <span id="themeIcon">🌙</span>
+                </button>
+
+                <a href="index.html#contacto" class="nav-cta">Asesoría Altépet</a>
+            </div>
+        </nav>
+    </header>
+
+    <main id="contenido">
+        <section class="page-hero wm-hero">
+            <div class="mesh mesh-one" aria-hidden="true"></div>
+            <div class="codex-orb" aria-hidden="true"></div>
+
+            <div class="page-hero-copy reveal-left">
+                <p class="eyebrow">Escritorios Linux</p>
+                <h1>Elige cómo quieres vivir tu escritorio.</h1>
+                <p class="hero-text">
+                    En Linux no solo eliges una distribución. También puedes elegir el entorno visual:
+                    uno familiar, uno ligero, uno minimalista o uno avanzado basado en atajos.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#recomendador" class="btn btn-primary">Usar recomendador</a>
+                    <a href="#entornos" class="btn btn-secondary">Ver opciones</a>
+                </div>
+
+                <div class="hero-badges">
+                    <span>Más comodidad</span>
+                    <span>Más rendimiento</span>
+                    <span>Más personalización</span>
+                </div>
+            </div>
+
+            <div class="page-hero-visual reveal-right">
+                <img src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?auto=format&fit=crop&w=1100&q=80" alt="Escritorio moderno con monitor y laptop" loading="eager">
+            </div>
+        </section>
+
+        <section id="recomendador" class="section comparator-section">
+            <div class="section-header reveal-up">
+                <p class="eyebrow">Recomendador rápido</p>
+                <h2>¿Qué tipo de experiencia quieres?</h2>
+                <p>
+                    Esta recomendación no reemplaza una revisión del equipo, pero te ayuda a entender qué escritorio puede encajar mejor contigo.
+                </p>
+            </div>
+
+            <div class="comparator wm-comparator reveal-up">
+                <div class="compare-controls" role="tablist" aria-label="Perfiles de escritorio">
+                    <button class="wm-btn active" data-wm="familiar" type="button">🪟 Familiar tipo Windows</button>
+                    <button class="wm-btn" data-wm="moderno" type="button">✨ Moderno y pulido</button>
+                    <button class="wm-btn" data-wm="ligero" type="button">🪶 Equipo con pocos recursos</button>
+                    <button class="wm-btn" data-wm="personalizable" type="button">🎨 Personalización total</button>
+                    <button class="wm-btn" data-wm="atajos" type="button">⌨️ Atajos y productividad</button>
+                </div>
+
+                <div class="compare-result" id="wmResult" aria-live="polite">
+                    <p class="eyebrow">Recomendación Altépet</p>
+                    <h3>Cinnamon o KDE Plasma</h3>
+                    <p>Si vienes de Windows, Cinnamon suele sentirse muy natural. KDE también es familiar, pero permite personalizar casi todo.</p>
+                    <div class="result-tags">
+                        <span>Cinnamon</span>
+                        <span>KDE Plasma</span>
+                        <span>Fácil</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="entornos" class="section">
+            <div class="section-header reveal-up">
+                <p class="eyebrow">Entornos de escritorio</p>
+                <h2>Opciones completas y amigables para uso diario.</h2>
+                <p>
+                    Los entornos de escritorio incluyen paneles, menú de aplicaciones, configuración visual, gestor de archivos y una experiencia más lista para usuarios nuevos.
+                </p>
+            </div>
+
+            <div class="wm-grid stagger">
+                <article class="wm-card">
+                    <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=900&q=80" alt="Laptop con interfaz moderna" loading="lazy">
+                    <div class="wm-body">
+                        <div class="wm-top">
+                            <span class="wm-logo">G</span>
+                            <div>
+                                <h3>GNOME</h3>
+                                <p>Minimalista, limpio y enfocado en productividad.</p>
+                            </div>
+                        </div>
+                        <div class="meta-row"><span>RAM alta</span><span>Fácil</span><span>Moderno</span></div>
+                        <h4>Ventajas</h4>
+                        <ul>
+                            <li>Diseño muy pulido.</li>
+                            <li>Flujo de trabajo simple.</li>
+                            <li>Excelente para laptops modernas.</li>
+                        </ul>
+                        <h4>Desventajas</h4>
+                        <ul>
+                            <li>Consume más recursos.</li>
+                            <li>Menos familiar para usuarios que vienen de Windows.</li>
+                        </ul>
+                        <p class="altepet-note">Recomendación Altépet: ideal para equipos modernos y usuarios que quieren una experiencia limpia.</p>
+                    </div>
+                </article>
+
+                <article class="wm-card">
+                    <img src="https://images.unsplash.com/photo-1547082299-de196ea013d6?auto=format&fit=crop&w=900&q=80" alt="Monitor con escritorio digital" loading="lazy">
+                    <div class="wm-body">
+                        <div class="wm-top">
+                            <span class="wm-logo">K</span>
+                            <div>
+                                <h3>KDE Plasma</h3>
+                                <p>Potente, visual y extremadamente personalizable.</p>
+                            </div>
+                        </div>
+                        <div class="meta-row"><span>RAM media</span><span>Fácil</span><span>Personalizable</span></div>
+                        <h4>Ventajas</h4>
+                        <ul>
+                            <li>Muy parecido a flujos tradicionales de escritorio.</li>
+                            <li>Gran capacidad de personalización.</li>
+                            <li>Buen equilibrio entre funciones y rendimiento.</li>
+                        </ul>
+                        <h4>Desventajas</h4>
+                        <ul>
+                            <li>Tantas opciones pueden confundir al inicio.</li>
+                            <li>Puede romper estética si se personaliza sin cuidado.</li>
+                        </ul>
+                        <p class="altepet-note">Recomendación Altépet: excelente para usuarios que quieren control visual sin perder facilidad.</p>
+                    </div>
+                </article>
+
+                <article class="wm-card">
+                    <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=900&q=80" alt="Laptop ligera en escritorio" loading="lazy">
+                    <div class="wm-body">
+                        <div class="wm-top">
+                            <span class="wm-logo">X</span>
+                            <div>
+                                <h3>XFCE</h3>
+                                <p>Ligero, estable y perfecto para equipos modestos.</p>
+                            </div>
+                        </div>
+                        <div class="meta-row"><span>RAM baja</span><span>Fácil</span><span>Ligero</span></div>
+                        <h4>Ventajas</h4>
+                        <ul>
+                            <li>Consume pocos recursos.</li>
+                            <li>Muy estable.</li>
+                            <li>Ideal para revivir laptops antiguas.</li>
+                        </ul>
+                        <h4>Desventajas</h4>
+                        <ul>
+                            <li>Menos moderno visualmente.</li>
+                            <li>Algunas funciones requieren ajustes manuales.</li>
+                        </ul>
+                        <p class="altepet-note">Recomendación Altépet: gran opción cuando la prioridad es rendimiento y estabilidad.</p>
+                    </div>
+                </article>
+
+                <article class="wm-card">
+                    <img src="https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=900&q=80" alt="Diseño de escritorio y trabajo visual" loading="lazy">
+                    <div class="wm-body">
+                        <div class="wm-top">
+                            <span class="wm-logo">C</span>
+                            <div>
+                                <h3>Cinnamon</h3>
+                                <p>Familiar, cómodo y muy bueno para migrar desde Windows.</p>
+                            </div>
+                        </div>
+                        <div class="meta-row"><span>RAM media</span><span>Muy fácil</span><span>Migración</span></div>
+                        <h4>Ventajas</h4>
+                        <ul>
+                            <li>Interfaz muy intuitiva.</li>
+                            <li>Excelente primera experiencia Linux.</li>
+                            <li>Funciona muy bien con Linux Mint.</li>
+                        </ul>
+                        <h4>Desventajas</h4>
+                        <ul>
+                            <li>No es tan ligero como XFCE.</li>
+                            <li>Menos llamativo que KDE o GNOME.</li>
+                        </ul>
+                        <p class="altepet-note">Recomendación Altépet: de las mejores opciones para usuarios nuevos.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="tiling" class="section">
+            <div class="section-header reveal-up">
+                <p class="eyebrow">Gestores de ventanas</p>
+                <h2>Productividad con atajos, mosaicos y control avanzado.</h2>
+                <p>
+                    Un gestor de ventanas es más minimalista que un entorno completo. Puede ser muy rápido, pero normalmente requiere aprender atajos y configurar más cosas.
+                </p>
+            </div>
+
+            <div class="wm-grid stagger">
+                <article class="wm-card compact">
+                    <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=900&q=80" alt="Código en pantalla para usuarios avanzados" loading="lazy">
+                    <div class="wm-body">
+                        <div class="wm-top">
+                            <span class="wm-logo">H</span>
+                            <div>
+                                <h3>Hyprland</h3>
+                                <p>Wayland moderno, animado y muy visual.</p>
+                            </div>
+                        </div>
+                        <div class="meta-row"><span>RAM baja/media</span><span>Difícil</span><span>Power users</span></div>
+                        <p class="altepet-note">Recomendación Altépet: ideal para usuarios avanzados que quieren estética moderna y atajos.</p>
+                    </div>
+                </article>
+
+                <article class="wm-card compact">
+                    <img src="https://images.unsplash.com/photo-1537432376769-00a43b17f93f?auto=format&fit=crop&w=900&q=80" alt="Entorno de programación en monitor" loading="lazy">
+                    <div class="wm-body">
+                        <div class="wm-top">
+                            <span class="wm-logo">N</span>
+                            <div>
+                                <h3>Niri</h3>
+                                <p>Scrolling window manager moderno basado en Wayland.</p>
+                            </div>
+                        </div>
+                        <div class="meta-row"><span>RAM baja/media</span><span>Media</span><span>Wayland</span></div>
+                        <p class="altepet-note">Recomendación Altépet: atractivo para usuarios que quieren un flujo novedoso y fluido.</p>
+                    </div>
+                </article>
+
+                <article class="wm-card compact">
+                    <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=900&q=80" alt="Terminal y código" loading="lazy">
+                    <div class="wm-body">
+                        <div class="wm-top">
+                            <span class="wm-logo">i3</span>
+                            <div>
+                                <h3>i3</h3>
+                                <p>Clásico, rápido y basado en mosaicos.</p>
+                            </div>
+                        </div>
+                        <div class="meta-row"><span>RAM muy baja</span><span>Difícil</span><span>Atajos</span></div>
+                        <p class="altepet-note">Recomendación Altépet: excelente para equipos modestos y usuarios que disfrutan configurar.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="tabla" class="section">
+            <div class="section-header reveal-up">
+                <p class="eyebrow">Comparativa</p>
+                <h2>Resumen rápido de consumo y dificultad.</h2>
+            </div>
+
+            <div class="table-wrap reveal-up">
+                <table class="compare-table">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Tipo</th>
+                            <th>RAM aprox.</th>
+                            <th>Dificultad</th>
+                            <th>Ideal para</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>XFCE</td><td>Entorno</td><td>Baja</td><td>Fácil</td><td>Equipos antiguos</td></tr>
+                        <tr><td>Cinnamon</td><td>Entorno</td><td>Media</td><td>Muy fácil</td><td>Migrar desde Windows</td></tr>
+                        <tr><td>KDE Plasma</td><td>Entorno</td><td>Media</td><td>Fácil</td><td>Personalización</td></tr>
+                        <tr><td>GNOME</td><td>Entorno</td><td>Alta</td><td>Fácil</td><td>Productividad moderna</td></tr>
+                        <tr><td>Hyprland</td><td>WM</td><td>Baja/media</td><td>Difícil</td><td>Power users</td></tr>
+                        <tr><td>Niri</td><td>WM</td><td>Baja/media</td><td>Media</td><td>Wayland moderno</td></tr>
+                        <tr><td>i3</td><td>WM</td><td>Muy baja</td><td>Difícil</td><td>Atajos y rendimiento</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="section distro-faq">
+            <div class="section-header reveal-up">
+                <p class="eyebrow">Preguntas frecuentes</p>
+                <h2>Antes de cambiar tu escritorio.</h2>
+            </div>
+
+            <div class="faq-list reveal-up">
+                <details>
+                    <summary>¿Puedo cambiar de entorno después?</summary>
+                    <p>Sí. En Linux puedes instalar otro entorno, aunque Altépet recomienda elegir bien desde el inicio para evitar conflictos visuales.</p>
+                </details>
+                <details>
+                    <summary>¿Un gestor de ventanas es mejor?</summary>
+                    <p>No necesariamente. Es más eficiente y flexible para usuarios avanzados, pero puede ser incómodo para principiantes.</p>
+                </details>
+                <details>
+                    <summary>¿Cuál recomiendan para alguien nuevo?</summary>
+                    <p>Cinnamon, KDE Plasma o GNOME. Si el equipo es antiguo, XFCE.</p>
+                </details>
+                <details>
+                    <summary>¿Cuál es el más rápido?</summary>
+                    <p>Normalmente i3 o XFCE consumen menos recursos. Pero la experiencia final depende del hardware y la configuración.</p>
+                </details>
+            </div>
+        </section>
+
+        <section class="section pilot reveal-up">
+            <div>
+                <p class="eyebrow">Asesoría Altépet</p>
+                <h2>Elegimos el escritorio contigo.</h2>
+                <p>
+                    Revisamos tu equipo, memoria RAM, tipo de uso y experiencia previa para elegir una interfaz que se sienta cómoda y rápida.
+                </p>
+            </div>
+
+            <div class="pilot-card">
+                <h3>Te ayudamos a configurar</h3>
+                <ul>
+                    <li>Entorno adecuado.</li>
+                    <li>Tema visual limpio.</li>
+                    <li>Atajos básicos.</li>
+                    <li>Paneles y programas esenciales.</li>
+                </ul>
+                <a href="index.html#contacto" class="btn btn-primary">Solicitar asesoría</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div>
+            <a href="index.html" class="footer-logo">
+                <span class="logo-shell">
+                    <img src="assets/logo-altepet.png" alt="Logo Altépet">
+                </span>
+            </a>
+            <p>Altépet - Tecnología transparente y libre.</p>
+        </div>
+
+        <nav class="footer-links" aria-label="Enlaces de pie de página">
+            <a href="index.html">Inicio</a>
+            <a href="distribuciones.html">Distribuciones</a>
+            <a href="#entornos">Entornos</a>
+            <a href="#tiling">Gestores</a>
+            <a href="#tabla">Comparativa</a>
+        </nav>
+
+        <div class="footer-links">
+            <a href="mailto:altepet.tech@gmail.com">altepet.tech@gmail.com</a>
+            <a href="index.html#contacto">Contacto</a>
+            <a href="#recomendador">Recomendador</a>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
