@@ -43,3 +43,16 @@ Sitio estático completo listo para GitHub Pages.
 ## Nota
 
 Las imágenes externas vienen desde Unsplash. Para producción ideal, descárgalas, optimízalas en `.webp` y guárdalas en `assets/`.
+
+
+## Corrección navbar
+
+Se unificó la navbar en todas las páginas y se redujeron enlaces para evitar saturación visual.
+
+
+## Versión final para publicación
+
+- Navbar universal simplificada.
+- `CNAME` corregido con exactamente: `altepet.tech`
+- Sin archivos `.bat`, `.bash`, `.sh` o `.cmd`.
+- Lista para subir a GitHub Pages desde la raíz del repositorio.
